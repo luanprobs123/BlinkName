@@ -1,0 +1,62 @@
+int led1=D7;
+
+void setup() {
+  // initialize digital pin LED_BUILTIN as an output.
+  pinMode(led1, OUTPUT);
+}
+
+// the loop function runs over and over again forever
+void loop() {
+  // First signal 'L' with the Morse code: L = dot dash dot dot
+  // We have one dot = 1 unit one dash = 3 units, the space between two letter is 3 units as well.
+  digitalWrite(led1, HIGH);  
+  delay(500);                       
+  digitalWrite(led1, LOW);   
+  delay(500);                       
+  digitalWrite(led1, HIGH);  
+  delay(1500);                       
+  digitalWrite(led1, LOW);   
+  delay(500);                       
+  digitalWrite(led1, HIGH);  
+  delay(500);                       
+  digitalWrite(led1, LOW);
+  delay(500);
+  digitalWrite(led1, HIGH);  
+  delay(500);                       
+  digitalWrite(led1, LOW); 
+  delay(1500);                      // wait for 1.5 seconds before the next letter
+  // The second signal 'U' with the Morse code: dot dot dash
+  digitalWrite(led1, HIGH);  
+  delay(500);                       
+  digitalWrite(led1, LOW);   
+  delay(500);                       
+  digitalWrite(led1, HIGH);  
+  delay(500);                       
+  digitalWrite(led1, LOW);   
+  delay(500);                       
+  digitalWrite(led1, HIGH);  
+  delay(1500);                       
+  digitalWrite(led1, LOW);
+  delay(1500);
+                    
+  // The next signal 'A' with Morse code: dot dash
+  digitalWrite(led1, HIGH);  
+  delay(500);                       
+  digitalWrite(led1, LOW);   
+  delay(500);                       
+  digitalWrite(led1, HIGH);  
+  delay(1500);                       
+  digitalWrite(led1, LOW);   
+  delay(1500);
+  // wait for 1.5 seconds before the next letter
+  // Finally, the letter 'N' with: dash dot
+  
+  digitalWrite(led1, HIGH);  
+  delay(1500);                       
+  digitalWrite(led1, LOW);   
+  delay(500);                       
+  digitalWrite(led1, HIGH);  
+  delay(500);                       
+  digitalWrite(led1, LOW);   
+  delay(3500);
+}
