@@ -1,7 +1,7 @@
 int led1=D7;
 
 void setup() {
-  // initialize digital pin LED_BUILTIN as an output.
+  // initialize digital pin LED_D7 as an output.
   pinMode(led1, OUTPUT);
 }
 
